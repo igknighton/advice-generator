@@ -10,8 +10,11 @@
 }
 body {
   margin: 0;
+  box-sizing: border-box;
   font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 28px;
+  background: var(---dark-blue);
+  color: var(---light-cyan);
 }

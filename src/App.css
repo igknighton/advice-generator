@@ -1,3 +1,45 @@
-.App {
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
+  background: var(---dark-grayish-blue);
+  width: 600px;
+  height: 300px;
+  margin: 70px auto 0 auto;
+  border-radius: 20px;
+  padding: 50px 20px;
+}
+
+.adviceNumber {
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(---neon-green);
+}
+
+.button {
+  position: absolute;
+  bottom: -30px;
+  left: 45%;
+  background: var(---neon-green);
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.button:hover {
+  box-shadow: var(---neon-green) 1px 1px 25px;
+}
+
+.button img {
+  bottom: 30%;
+  left: 30%;
+  border-radius: 0;
+  width: 24px;
+  height: 24px;
 }
