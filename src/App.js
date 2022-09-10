@@ -1,11 +1,11 @@
 import './App.css';
 import divider from './images/pattern-divider-desktop.svg';
 import dice from './images/icon-dice.svg';
-import {useState} from "react";
+import {useEffect, useState} from "react";
 function App() {
 
 
-    const [quote,setQuote] = useState('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae delectus fugiat iste, quasi quo?');
+    const [quote,setQuote] = useState('');
     const [adviceNumber,setAdviceNumber ] = useState('');
 
     const loadQuote = async () => {
@@ -21,6 +21,9 @@ function App() {
     }
 
 
+    useEffect(()=> {
+        loadQuote().then();
+    },[])
   return (
           <div className="container">
               <div className="adviceNumber">
